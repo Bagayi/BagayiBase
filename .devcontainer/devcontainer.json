@@ -1,0 +1,9 @@
+{
+    "name": "Ubuntu",
+    "image": "mcr.microsoft.com/vscode/devcontainers/universal:linux",
+
+    "features": {
+        "ghcr.io/devcontainers/features/rust:1": {},
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+    }
+}
