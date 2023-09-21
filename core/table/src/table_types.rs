@@ -1,4 +1,5 @@
 use async_trait::async_trait;
+use uuid::Uuid;
 
 #[async_trait]
 pub trait TableSchemaTrait {
@@ -21,6 +22,7 @@ pub trait TableSchemaTrait {
 pub struct TableSchema {
     pub name: String,
     pub columns: Vec<Column>,
+    pub tenant_id: Uuid,
 }
 
 pub struct Column {
@@ -30,13 +32,14 @@ pub struct Column {
     pub is_primary_key: bool,
 }
 
-pub struct Row {
+pub struct Row<'a> {
     pub row_id : usize,
     pub row_value : String,
-    pub column: Column
+    pub column: Column,
+    pub table_schema: &'a TableSchema
 }
 
-pub struct Table {
+pub struct Table<'a> {
     pub schema: TableSchema,
-    pub rows: Vec<Row>,
+    pub rows: Vec<Row<'a>>,
 }

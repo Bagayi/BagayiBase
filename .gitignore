@@ -29,3 +29,10 @@ Cargo.lock
 # Ide configs
 .idea
 .vscode
+
+# terrarform 
+*.terraform
+terraform/.*
+*.log
+
+dynamodb/

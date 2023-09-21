@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 async-trait = "0.1.73"
+uuid = "1.4.1"

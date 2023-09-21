@@ -13,4 +13,51 @@ fn test_creating_table() {
     assert_eq!(result, 4);
 }
 
+#[test]
+fn test_get_table(){
+
+}
+
+
+#[test]
+fn test_update_table(){
+
+}
+
+
+#[test]
+fn test_delete_table(){
+
+}
+
+
+#[test]
+fn test_create_record(){
+
+}
+
+
+#[test]
+fn test_get_record(){
+
+}
+
+
+#[test]
+fn test_update_record(){
+
+}
+
+
+#[test]
+fn test_delete_record(){
+
+}
+
+
+#[test]
+fn test_get_all_records(){
+
+}
+
 
