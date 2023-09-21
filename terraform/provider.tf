@@ -1,13 +1,12 @@
 provider "aws" {
-    access_key                  = "mock_access_key"
+    access_key                  = "AKIATYUVCWESJE23SS6E"
     region                      = "us-east-1"
-    s3_use_path_style           = true
-    secret_key                  = "mock_secret_key"
+    secret_key                  = "fIgqKrNFQYXgc9mnViV4vxoH5topYkMb5jmdlpVn"
     skip_credentials_validation = true
     skip_metadata_api_check     = true
     skip_requesting_account_id  = true
-    
+
     endpoints {
-        dynamodb = "https://localhost:8000/"
+        dynamodb = "http://localhost:8000/"
     }
 }
